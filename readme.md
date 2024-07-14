@@ -65,7 +65,7 @@ Will translate files in `working/todo` and save in `working/new`
 
 ### make apply
 
-Will apply the files in `working/todo` to `translated`
+Will apply the files in `working/new` to `translated`
 
 ```
 // translated/default.json
