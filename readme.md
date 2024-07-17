@@ -101,7 +101,12 @@ The files in translated should follow its pattern and change to
 // translated/default-1.json
 {"AP不足":"AP不足"}
 // translated/default.split.json
-{"[split]サポート選択":"[split]支援选择"","[split]メモリー選択":"[split]回忆选择","[split]開始確認":"[split]开始确认"}
+{"[split]サポート選択":"[split]支援选择","[split]メモリー選択":"[split]回忆选择","[split]開始確認":"[split]开始确认"}
 // translated/default-1.split.json
 {"[split]アイドル選択":"[split]偶像选择"}
 ```
+
+## TODO
+
+- [ ] support `terms.json`
+- [ ] backup `translated` before applying
