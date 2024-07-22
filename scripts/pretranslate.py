@@ -3,16 +3,26 @@ from openai import OpenAI
 from typing import cast, List, Dict
 from utils import SPLIT_STRING_PREFIX, working_new_dir, working_todo_dir
 from prompts import gen_system_prompt
+from dotenv import dotenv_values
+
+def get_env_vars() -> Dict[str, str]:
+    vals = dotenv_values(".env", encoding="utf-8")
+    return {
+        "api_key": vals["OPENAI_API_KEY"],
+        "base_url": vals["OPENAI_BASE_URL"],
+        "model": vals["MODEL"],
+    } # type: ignore
 
 
 def pretranslate_texts(texts: List[str]) -> Dict[str, str]:
     system_prompt = gen_system_prompt(str(texts))
+    env_vars = get_env_vars()
     client = OpenAI(
-        # api_key="",
-        # base_url="",
+        api_key=env_vars["api_key"],
+        base_url=env_vars["base_url"],
     )
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model=env_vars["model"],
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": str(texts)},
