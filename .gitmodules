@@ -1,3 +1,3 @@
-[submodule "gakumas-genric-source-strings"]
-	path = gakumas-genric-source-strings
-	url = git@github.com:imas-tools/gakumas-genric-source-strings.git
+[submodule "gakumas-generic-source-strings"]
+	path = gakumas-generic-source-strings
+	url = git@github.com:imas-tools/gakumas-generic-source-strings.git
