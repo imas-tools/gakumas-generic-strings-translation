@@ -1,4 +1,5 @@
 import json
+from utils import SPLIT_STRING_PREFIX
 
 dest_lang = "simplified Chinese"
 example_input = [
@@ -6,27 +7,27 @@ example_input = [
     "AP全回復",
     "AP回復",
     "AP回復アイテム",
-    "[split]アイドル選択",
-    "[split]サポート選択",
-    "[split]メモリー選択",
-    "[split]開始確認",
+    "[__split__]アイドル選択",
+    "[__split__]サポート選択",
+    "[__split__]メモリー選択",
+    "[__split__]開始確認",
 ]
 example_output = {
     "AP不足": "AP不足",
     "AP全回復": "AP全恢复",
     "AP回復": "AP恢复",
     "AP回復アイテム": "AP恢复道具",
-    "[split]アイドル選択": "[split]偶像选择",
-    "[split]サポート選択": "[split]支援选择",
-    "[split]メモリー選択": "[split]回忆选择",
-    "[split]開始確認": "[split]开始确认",
+    "[__split__]アイドル選択": "[__split__]偶像选择",
+    "[__split__]サポート選択": "[__split__]支援选择",
+    "[__split__]メモリー選択": "[__split__]回忆选择",
+    "[__split__]開始確認": "[__split__]开始确认",
 }
 
 base_system_prompt =  f"""You are working for a localization service company that translates game texts from Japanese to {dest_lang}.
 
 Requirements:
 1. You will be given a json array containing the game texts in Japanese. 
-2. Each text may start with an identifier [split] marking that this text is a part of a longer text. And if the text starts with the identifier, the corresponding translation shall contain the identifier too
+2. Each text may start with an identifier {SPLIT_STRING_PREFIX} marking that this text is a part of a longer text. And if the text starts with the identifier, the corresponding translation shall contain the identifier too
 3. You should return the translation in json map array with scheme: {{ [original text]: [translation] }}"""
 
 term_table_path = "./etc/terms.json"

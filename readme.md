@@ -29,7 +29,7 @@ format are json arrays
 // gakumas-generic-source-strings/data/default.json
 ["AP不足","AP全回復","AP回復","AP回復アイテム"]
 // gakumas-generic-source-strings/data/default.split.json
-["[split]アイドル選択","[split]サポート選択","[split]メモリー選択","[split]開始確認"]
+["[__split__]アイドル選択","[__split__]サポート選択","[__split__]メモリー選択","[__split__]開始確認"]
 ```
 
 Supposing `translated` folder contains
@@ -38,7 +38,7 @@ Supposing `translated` folder contains
 // /translated/default.json
 {"AP不足":"AP不足"}
 // gakumas-generic-source-strings/data/default.split.json
-{"[split]アイドル選択":"[split]偶像选择"}
+{"[__split__]アイドル選択":"[__split__]偶像选择"}
 ```
 
 ### make gen-todo
@@ -49,7 +49,7 @@ files are generated in `working/todo`
 // working/todo/default.json
 {"AP全回復":"","AP回復":"","AP回復アイテム":""}
 // working/todo/default.split.json
-{"[split]サポート選択":[split],"[split]メモリー選択":"[split]","[split]開始確認":"[split]"}
+{"[__split__]サポート選択":[__split__],"[__split__]メモリー選択":"[__split__]","[__split__]開始確認":"[__split__]"}
 ```
 
 ### make pretranslate
@@ -60,7 +60,7 @@ Will translate files in `working/todo` and save in `working/new`
 // working/new/default-pretranslated.json
 {"AP全回復":"AP全回复","AP回復":"AP回复","AP回復アイテム":"AP回复道具"}
 // working/new/default.split.json
-{"[split]サポート選択":"[split]支援选择"","[split]メモリー選択":"[split]回忆选择","[split]開始確認":"[split]开始确认"}
+{"[__split__]サポート選択":"[__split__]支援选择"","[__split__]メモリー選択":"[__split__]回忆选择","[__split__]開始確認":"[__split__]开始确认"}
 ```
 
 ### make apply
@@ -71,7 +71,7 @@ Will apply the files in `working/new` to `translated`
 // translated/default.json
 {"AP不足":"AP不足","AP全回復":"AP全回复","AP回復":"AP回复","AP回復アイテム":"AP回复道具"}
 // working/default.split.json
-{"[split]アイドル選択":"[split]偶像选择","[split]サポート選択":"[split]支援选择"","[split]メモリー選択":"[split]回忆选择","[split]開始確認":"[split]开始确认"}
+{"[__split__]アイドル選択":"[__split__]偶像选择","[__split__]サポート選択":"[__split__]支援选择"","[__split__]メモリー選択":"[__split__]回忆选择","[__split__]開始確認":"[__split__]开始确认"}
 ```
 
 ### make arrange
@@ -86,9 +86,9 @@ Supposing `gakumas-generic-source-strings/data` is now changed to:
 // gakumas-generic-source-strings/data/default-1.json
 ["AP不足"]
 // gakumas-generic-source-strings/data/default.split.json
-["[split]サポート選択","[split]メモリー選択","[split]開始確認"]
+["[__split__]サポート選択","[__split__]メモリー選択","[__split__]開始確認"]
 // gakumas-generic-source-strings/data/default-1.split.json
-["[split]アイドル選択"]
+["[__split__]アイドル選択"]
 ```
 
 After running `make arrange`
@@ -101,9 +101,9 @@ The files in translated should follow its pattern and change to
 // translated/default-1.json
 {"AP不足":"AP不足"}
 // translated/default.split.json
-{"[split]サポート選択":"[split]支援选择","[split]メモリー選択":"[split]回忆选择","[split]開始確認":"[split]开始确认"}
+{"[__split__]サポート選択":"[__split__]支援选择","[__split__]メモリー選択":"[__split__]回忆选择","[__split__]開始確認":"[__split__]开始确认"}
 // translated/default-1.split.json
-{"[split]アイドル選択":"[split]偶像选择"}
+{"[__split__]アイドル選択":"[__split__]偶像选择"}
 ```
 
 ## TODO
