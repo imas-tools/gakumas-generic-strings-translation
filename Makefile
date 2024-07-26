@@ -12,3 +12,6 @@ apply:
 
 pretranslate:
 	python scripts/pretranslate.py
+
+normalize:
+	python scripts/normalize.py
