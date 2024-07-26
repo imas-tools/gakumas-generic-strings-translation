@@ -36,7 +36,9 @@ def arrange(all_kvs: Union[None, Dict[str, str]] = None):
     # write kvs
     for filename, kvs in kvs_to_update.items():
         if len(kvs.values()) == 0:
-            os.remove(filename)
+            if os.path.exists(filename):
+                print(f"delete {filename}")
+                os.remove(filename)
             continue
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         with open(filename, "w", encoding="utf-8") as f:

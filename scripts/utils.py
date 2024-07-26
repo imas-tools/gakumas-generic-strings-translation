@@ -1,4 +1,4 @@
-import os, json, warnings
+import os, json, warnings, re
 from typing import Dict, List, cast, Tuple, Generator
 
 SPLIT_STRING_PREFIX = "[__split__]"
@@ -61,3 +61,10 @@ def get_kvs_for_dir(dir_path: str):
             kv_for_file = get_kvs_for_file(file_path)
             kvs.update(kv_for_file)
     return kvs
+
+
+def find_english_phrases(text):
+    # 正则表达式匹配包含空格的连续英文字母
+    pattern = r"[A-Za-z]+(?:\s+[A-Za-z\-]+)*"
+    matches = re.findall(pattern, text)
+    return matches

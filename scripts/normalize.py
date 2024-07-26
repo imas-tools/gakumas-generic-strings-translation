@@ -26,7 +26,7 @@ def normalize_strings(dir: str, order_exclude_dir: List[str]):
 
 
 def main():
-    normalize_strings("./translated", [])
+    normalize_strings("./translated", ["./translated/genericTrans/lyrics"])
 
 if __name__ == "__main__":
     main()

@@ -85,6 +85,7 @@ def pretranslate():
                     texts = json.load(f)
                     print(f"Pretranslating {len(texts)} texts from {file} to {destpath}...")
                     translated = pretranslate_all_texts(texts)
+                    os.makedirs(os.path.dirname(destpath), exist_ok=True)
                     with open(destpath, "w", encoding="utf-8") as f:
                         json.dump(translated, f, ensure_ascii=False, indent=4)
 

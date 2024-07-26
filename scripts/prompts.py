@@ -1,5 +1,5 @@
 import json
-from utils import SPLIT_STRING_PREFIX
+from utils import SPLIT_STRING_PREFIX, find_english_phrases
 
 dest_lang = "simplified Chinese"
 example_input = [
@@ -23,26 +23,32 @@ example_output = {
     "[__split__]開始確認": "[__split__]开始确认",
 }
 
-base_system_prompt =  f"""You are working for a localization service company that translates game texts from Japanese to {dest_lang}.
+base_system_prompt = f"""You are working for a localization service company that translates game texts from Japanese to {dest_lang}.
 
 Requirements:
 1. You will be given a json array containing the game texts in Japanese. 
 2. Each text may start with an identifier {SPLIT_STRING_PREFIX} marking that this text is a part of a longer text. And if the text starts with the identifier, the corresponding translation shall contain the identifier too
-3. You should return the translation in json map array with scheme: {{ [original text]: [translation] }}"""
+3. You should return the translation in json map array with scheme: {{ [original text]: [translation] }}
+"""
 
 term_table_path = "./etc/terms.json"
 with open(term_table_path, "r", encoding="utf-8") as f:
     term_table = json.load(f)
 
-def gen_term_slice_from_term_table(user_prompt: str):
+def gen_term_slice(user_prompt: str):
+    # from term table
     term_table_slice = {}
     for term in term_table:
         if term in user_prompt:
             term_table_slice[term] = term_table[term]
+    # from english words
+    english_words = find_english_phrases(user_prompt)
+    for word in english_words:
+        term_table_slice[word] = word
     return term_table_slice
 
 def gen_system_prompt(user_prompt: str):
-    term_slice = gen_term_slice_from_term_table(user_prompt)
+    term_slice = gen_term_slice(user_prompt)
     term_slice_prompt_snippets = f"""4. You may use the following terms for translation: {term_slice}""" if term_slice else ""
     return base_system_prompt + term_slice_prompt_snippets + f"""
 Example Input:
