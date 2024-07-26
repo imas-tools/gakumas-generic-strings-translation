@@ -3,7 +3,7 @@ from typing import Dict, List, cast, Tuple, Generator
 
 SPLIT_STRING_PREFIX = "[__split__]"
 
-source_strings_dir = "./gakumas-genric-source-strings/data"
+source_strings_dir = "./gakumas-generic-source-strings/data"
 translation_dir = "./translated"
 working_new_dir = "./working/new"
 working_todo_dir = "./working/todo"
