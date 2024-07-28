@@ -1,9 +1,11 @@
 import os, json
 from typing import Dict, List
+from collections import OrderedDict
 
 # normalize each json file in the directory
 # if the directory is in the order_exclude_dir, then do not sort the data
 # otherwise, sort the data in ascending order
+
 
 def normalize_strings(dir: str, order_exclude_dir: List[str]):
     for i in range(len(order_exclude_dir)):
@@ -15,18 +17,25 @@ def normalize_strings(dir: str, order_exclude_dir: List[str]):
             if not file.endswith(".json"):
                 continue
             with open(os.path.join(root_dir, file), "r", encoding="utf-8") as f:
-                data = json.load(f)
-                if isinstance(data, dict):
-                    data = data.keys()
+                data: Dict = json.load(f)
+                if isinstance(data, list):
+                    raise Exception("Data is a list, not a dictionary")
             with open(os.path.join(root_dir, file), "w", encoding="utf-8") as f:
+                # ignore
                 if os.path.normpath(root_dir) in order_exclude_dir:
-                    json.dump(list(data), f, ensure_ascii=False, indent=4)
+                    json.dump(data, f, ensure_ascii=False, indent=4)
                 else:
-                    json.dump(sorted(data), f, ensure_ascii=False, indent=4)
+                    json.dump(
+                        OrderedDict(sorted(data.items())),
+                        f,
+                        ensure_ascii=False,
+                        indent=4,
+                    )
 
 
 def main():
     normalize_strings("./translated", ["./translated/genericTrans/lyrics"])
+
 
 if __name__ == "__main__":
     main()
