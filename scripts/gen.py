@@ -4,8 +4,8 @@ from utils import (
     source_strings_dir,
     translation_dir,
     working_todo_dir,
-    yield_source_string_from_translated_dir,
     yield_string,
+    yield_string_from_dir,
     SPLIT_STRING_PREFIX,
 )
 
@@ -18,9 +18,9 @@ def untranslated_strings_to_map(untranslated_strings: List[str]) -> dict:
 
 
 def gen_todo():
-    translated_strings: List[str] = []
-    for s, _ in yield_source_string_from_translated_dir(translation_dir):
-        translated_strings.append(s)
+    translated_source_strings: List[str] = []
+    for s, _ in yield_string_from_dir(translation_dir):
+        translated_source_strings.append(s)
 
     for root_path, _, file_names in os.walk(source_strings_dir):
         for file_name in file_names:
@@ -32,7 +32,7 @@ def gen_todo():
 
             untranslated_strings = []
             for s, _ in yield_string(file_path):
-                if s not in translated_strings:
+                if s not in translated_source_strings:
                     untranslated_strings.append(s)
 
             if len(untranslated_strings) > 0:
