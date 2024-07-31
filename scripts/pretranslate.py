@@ -62,7 +62,7 @@ def get_next_batch(
     return batch
 
 
-def pretranslate_all_texts(texts: List[str], max_batch_size=50) -> Dict[str, str]:
+def pretranslate_all_texts(texts: List[str], max_batch_size=20) -> Dict[str, str]:
     result = {}
     while batch := get_next_batch(texts, max_batch_size, result):
         result.update(pretranslate_texts(batch))

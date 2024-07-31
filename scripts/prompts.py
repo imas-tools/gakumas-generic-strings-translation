@@ -45,6 +45,8 @@ def gen_term_slice(user_prompt: str):
     english_words = find_english_phrases(user_prompt)
     for word in english_words:
         term_table_slice[word] = word
+    if term_table_slice:
+        print(f"applying term table: {term_table_slice}")
     return term_table_slice
 
 def gen_system_prompt(user_prompt: str):
