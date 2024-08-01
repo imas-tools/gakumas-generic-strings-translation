@@ -177,5 +177,10 @@
     "（プロデュース中<color=#FF3381>1回</color>）": "（培育中<color=#FF3381>1次</color>）",
     "（レッスン中に使用したスキルカード1枚ごとに、○〆元気増加量": "（使用于课程中的技能卡片每张，○〆元气增加量",
     "）\n<nobr><color=#8581FF>レッスン中1回</color> </nobr><nobr><color=#8581FF>重複不可</color></nobr>": "）\n<nobr><color=#8581FF>课程中1次</color> </nobr><nobr><color=#8581FF>不可重叠</color></nobr>",
-    "）\n○〆体力消費": "）\n○〆体力消耗"
+    "）\n○〆体力消費": "）\n○〆体力消耗",
+    "○〆好調状態の場合、使用可\nパラメータ+12\n○〆好調の<nobr>300%</nobr>分パラメータ上昇\n<nobr><color=#8581FF>レッスン中1回</color> </nobr><nobr><color=#8581FF>重複不可</color></nobr>": "○〆好调状态的情况下，可以使用\n数值+12\n○〆好调状态的<nobr>300%</nobr>的数值上升\n<nobr><color=#8581FF>课程中1次</color></nobr><nobr><color=#8581FF>不可重复</color></nobr>",
+    "はじめてのラムネ+": "初次的柠檬汽水+",
+    "○〆好调状态的情况下，可以使用\n数值+12\n○〆好調の<nobr>300%</nobr>分数值上升\n<nobr><color=#8581FF>课程中1次</color>  </nobr><nobr><color=#8581FF>不可重复</color></nobr>": "○〆好调状态的情况下，可以使用\n数值+12\n○〆好调の<nobr>300%</nobr>分数值上升\n<nobr><color=#8581FF>课程中1次</color>  </nobr><nobr><color=#8581FF>不可重复</color></nobr>",
+    "瓶の中のきらめき+": "瓶中的闪光+",
+    "ターン終了時○〆好調が3ターン以上の場合、○〆好調<nobr>2ターン</nobr>\n（レッスン内4回）": "回合结束时○〆好调状态持续3回合以上的情况下，○〆好调状态再持续<nobr>2回合</nobr>\n（课程内4次）"
 }
