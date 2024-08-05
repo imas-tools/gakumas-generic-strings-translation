@@ -3,3 +3,7 @@
 __pycache__
 working/
 .env
+/.vs
+/scripts/移动split.py
+/scripts/迁移翻译.py
+/translated/genericTrans/lyrics/checc_lrc.py
