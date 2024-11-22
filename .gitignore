@@ -3,3 +3,4 @@
 __pycache__
 working/
 .env
+/.vs
