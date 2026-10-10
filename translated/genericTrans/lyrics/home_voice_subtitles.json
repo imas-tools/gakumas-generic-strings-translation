@@ -2,10 +2,10 @@
   "enabled": true,
   "showCueWhenMissing": false,
   "screenRect": [
-    0.6,
-    0.686,
-    0.38,
-    0.094
+    0.05,
+    0.87,
+    0.42,
+    0.01
   ],
   "fontSize": 32,
   "textPadding": [
@@ -15,15 +15,15 @@
   "subtitles": [
     {
       "voiceAssetId": "sud_vo_system_amao_home_birthday-01",
-      "text": "生日快乐！\n制作人"
+      "text": "生日快乐！制作人"
     },
     {
       "voiceAssetId": "sud_vo_system_amao_home_cmmn-01",
-      "text": "制作人你也一样，\n遇到困难时就来依靠我吧。"
+      "text": "制作人也是，遇到困难时就来依靠我吧。"
     },
     {
       "voiceAssetId": "sud_vo_system_amao_home_cmmn-02",
-      "text": "哦——，附近有舞台演出啊。\n我们去看看吧。"
+      "text": "哦——，附近有舞台演出啊。我去看看吧。"
     },
     {
       "voiceAssetId": "sud_vo_system_amao_home_cmmn-03",
@@ -31,11 +31,11 @@
     },
     {
       "voiceAssetId": "sud_vo_system_amao_home_cmmn-04",
-      "text": "帅气的王子一直是我的憧憬。"
+      "text": "帅气的王子是我的憧憬。"
     },
     {
       "voiceAssetId": "sud_vo_system_amao_home_cmmn-05",
-      "text": "虽然琴音有点让人费心，\n但她也不是坏孩子。"
+      "text": "琴音虽然有点让人费心，但她不是坏孩子。"
     },
     {
       "voiceAssetId": "sud_vo_system_amao_home_cmmn-06",
@@ -911,31 +911,31 @@
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-000_home_cmmn-01",
-      "text": "偶像真是连眨个眼\n都会被一直看着呢..."
+      "text": "偶像真是连眨个眼都会被人一直看着呢。"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-000_home_cmmn-02",
-      "text": "第一首歌，\n我会好好珍惜的！"
+      "text": "第一首歌，我会超珍惜的！"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-000_home_cmmn-03",
-      "text": "我要去向全世界\n展示我的可爱啦——！"
+      "text": "我要去全世界展示我的可爱啦——！"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-001_home_cmmn-01",
-      "text": "自搜真的没法停下来啊...！"
+      "text": "佑生先生，这个真的停不下来啊！"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-001_home_cmmn-02",
-      "text": "果然，我最喜欢的是\n站在舞台上的那一刻！"
+      "text": "我果然最喜欢站在舞台上的瞬间了！"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-001_home_cmmn-03",
-      "text": "每当演唱会临近，\n我就心跳加速、兴奋不已！"
+      "text": "每当演唱会临近，我就心跳加速、兴奋不已！"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-002_home_cmmn-01",
-      "text": "等我有钱了，真想把所有小摊都打卡一遍啊～"
+      "text": "等成了有钱人，我想试试把手部展示也全面艺术化～"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-002_home_cmmn-02",
@@ -947,23 +947,23 @@
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-003_home_cmmn-01",
-      "text": "夏天有好多短期工可以打呢..."
+      "text": "夏天有好多短期工可以打呢。"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-003_home_cmmn-02",
-      "text": "如果有写真集拍摄的工作，报酬的交涉就拜托了哦！"
+      "text": "如果有平面拍摄的工作来了，角色方面的交涉就拜托您了哦！"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-003_home_cmmn-03",
-      "text": "想度过一个最棒的夏天，所以等着好差事上门哦～！"
+      "text": "我想度过最棒的夏天，所以等着好差事上门哦～！"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-005_home_cmmn-01",
-      "text": "制作人希望我扮成什么样的万圣节造型呢？"
+      "text": "制作人想让我扮成什么样的变装呀？"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-005_home_cmmn-02",
-      "text": "给小家伙们的糖果，我先准备好吧！"
+      "text": "给小家伙们的点心，我先给他们备好吧！"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-005_home_cmmn-03",
@@ -975,7 +975,7 @@
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-006_home_cmmn-02",
-      "text": "圣诞节我会陪着你，不会让你孤单的哦！"
+      "text": "圣诞节，为了不让你一个人孤单，我会陪着你哦！"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-006_home_cmmn-03",
@@ -983,23 +983,23 @@
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-007_home_cmmn-01",
-      "text": "我会把我曾经黯淡无光的未来，变成一片光明！"
+      "text": "我会把曾经一片黑暗的未来，变得亮堂堂的哦！"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-007_home_cmmn-02",
-      "text": "为了让我能更加闪耀，请给我力量～！"
+      "text": "为了让我能更加闪耀，请给我力量！"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-007_home_cmmn-03",
-      "text": "我会把最棒的现场作为给你的礼物！"
+      "text": "我会把最棒的演唱会当礼物送给你的！"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-008_home_cmmn-01",
-      "text": "情人节...有没有谁打算送你巧克力...之类的呀？"
+      "text": "情人节，你预计会收到谁的巧克力吗？"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-008_home_cmmn-02",
-      "text": "是给制作人的话，也不是不可以送你巧克力哦～"
+      "text": "如果是制作人，我可以送你巧克力哦！"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-008_home_cmmn-03",
@@ -1007,15 +1007,15 @@
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-009_home_cmmn-01",
-      "text": "女儿节我都会和小家伙们用折纸做雏人偶！"
+      "text": "女儿节我都会和小不点们用折纸做雏人偶！"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-009_home_cmmn-02",
-      "text": "春天要来了啊～！我的钱袋子是不是也能回暖呢？"
+      "text": "马上就到春天了啊～！我的钱包是不是也能暖和起来呢？"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-009_home_cmmn-03",
-      "text": "就不想和穿着春装的小琴音去约会吗？"
+      "text": "不想和穿着春装的小琴音约会吗？"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-fktn-3-010_home_cmmn-01",
@@ -1151,11 +1151,11 @@
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-hmsz-3-000_home_cmmn-01",
-      "text": "所有已经坏掉的东西，\n我都会全部找回来。"
+      "text": "坏掉的东西，我也会全部找回来。"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-hmsz-3-000_home_cmmn-02",
-      "text": "无论是迷茫还是烦恼，\n什么都可以跟我说。"
+      "text": "无论是迷茫还是烦恼，什么都可以跟我说。"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-hmsz-3-000_home_cmmn-03",
@@ -1163,11 +1163,11 @@
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-hmsz-3-001_home_cmmn-01",
-      "text": "在泳池边午睡，\n感觉倒也不错呢。"
+      "text": "在泳池边午睡倒也不错呢。"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-hmsz-3-001_home_cmmn-02",
-      "text": "这么热的天，\n没必要那么勉强自己。\n你不觉得吗？"
+      "text": "这么热的天，没必要那么勉强自己。你不觉得吗？"
     },
     {
       "voiceAssetId": "sud_vo_system_cidol-hmsz-3-001_home_cmmn-03",
